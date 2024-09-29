@@ -1,0 +1,510 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-09, 08:54:14
+    Author     : Artur.Smolarski
+*/
+@font-face {
+  font-family: 'librus';
+  src: url('/assets/fonts/librus.eot?3syckr');
+  src: url('/assets/fonts/librus.eot?#iefix3syckr') format('embedded-opentype'), url('/assets/fonts/librus.woff?3syckr') format('woff'), url('/assets/fonts/librus.ttf?3syckr') format('truetype'), url('/assets/fonts/librus.svg?3syckr#librus') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.circle {
+  font-family: 'librus';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#icon-archiwum .circle:before {
+  content: "\e600";
+}
+#icon-elearning .circle:before {
+  content: "\e601";
+}
+#icon-indywidualni .circle {
+  color: #993366;
+}
+#icon-indywidualni .circle:before {
+  content: "\e602";
+}
+#icon-indywidualninieaktywna .circle:before {
+  content: "\e603";
+}
+#icon-informacja .circle:before {
+  content: "\e604";
+}
+#icon-interfejs .circle:before {
+  content: "\e605";
+}
+#icon-nauczyciele .circle:before {
+  content: "\e606";
+}
+#icon-nb .circle:before {
+  content: "\e607";
+}
+#icon-oceny .circle:before {
+  content: "\e608";
+}
+#icon-ogloszenia .circle:before {
+  content: "\e609";
+}
+#icon-planlekcji .circle:before {
+  content: "\e60a";
+}
+#icon-podreczniki .circle:before {
+  content: "\e60b";
+}
+#icon-pomoc .circle:before {
+  content: "\e60c";
+}
+#icon-statystykizbiorcze .circle:before {
+  content: "\e60e";
+}
+#icon-strona-glowna .circle:before {
+  content: "\e60f";
+}
+#icon-szkoly .circle:before {
+  content: "\e610";
+}
+#icon-terminarz .circle:before {
+  content: "\e611";
+}
+#icon-ubezpieczenia .circle:before {
+  content: "\e612";
+}
+#icon-ustawienia .circle:before {
+  content: "\e613";
+}
+#icon-wiadomosci .circle:before {
+  content: "\e614";
+}
+#icon-wybierzszkole .circle:before {
+  content: "\e615";
+}
+#icon-wyszukiwarka .circle:before {
+  content: "\e616";
+}
+#icon-zadania .circle:before {
+  content: "\e617";
+}
+#icon-zrealizowane .circle:before {
+  content: "\e618";
+}
+#icon-uslugi .circle {
+  color: #ff950b;
+}
+#icon-uslugi .circle:before {
+  content: "\e619";
+}
+#icon-ebiblio .circle:before {
+  content: "\e900";
+}
+#icon-bezpiecznyuczen .circle:before {
+  content: "\e620";
+}
+#icon-aplikacjamobilna .circle:before {
+  content: "\e621";
+}
+#page.basis #header {
+  background: -webkit-linear-gradient(left, #f1f1f4, #dbd0bf);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f1f1f4, #dbd0bf);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f1f1f4, #dbd0bf);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f1f1f4, #dbd0bf);
+  /* Standard syntax */
+}
+#page.basis #header #top-banner-container {
+  background: url('/assets/img/synergia/header/basis.png') top left no-repeat;
+}
+#page.systema #header {
+  background: -webkit-linear-gradient(left, #f1f1f4, #a8c9b5);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f1f1f4, #a8c9b5);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f1f1f4, #a8c9b5);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f1f1f4, #a8c9b5);
+  /* Standard syntax */
+}
+#page.systema #header #top-banner-container {
+  background: url('/assets/img/synergia/header/systema.png') top left no-repeat;
+}
+#page.altum #header {
+  background: -webkit-linear-gradient(left, #f1f1f4, #bbcbd3);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f1f1f4, #bbcbd3);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f1f1f4, #bbcbd3);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f1f1f4, #bbcbd3);
+  /* Standard syntax */
+}
+#page.altum #header #top-banner-container {
+  background: url('/assets/img/synergia/header/altum.png') top left no-repeat;
+}
+#page #header {
+  background: -webkit-linear-gradient(left, #f1f1f4, #e5e8f0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f1f1f4, #e5e8f0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f1f1f4, #e5e8f0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f1f1f4, #e5e8f0);
+  /* Standard syntax */
+}
+#page #header.fixed:before {
+  content: '';
+  width: 100%;
+  height: 32px;
+  display: inline-block;
+}
+#page #header.fixed #main-navigation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#page #header #top-banner-container {
+  padding: 0;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  background: url('/assets/img/synergia/header/synergia.png') top left no-repeat;
+}
+#page #header #top-banner-container #top-banner {
+  width: 400px;
+  height: 110px;
+  background: none;
+}
+#page #header #top-banner-container #graphic-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  margin: 25px auto 0 auto;
+}
+#page #header #top-banner-container #graphic-menu ul li {
+  margin-left: 2px;
+}
+#page #header #top-banner-container #graphic-menu ul li:first-child {
+  margin-left: 0;
+}
+#page #header #top-banner-container #graphic-menu ul li a {
+  text-align: center;
+  line-height: 15px;
+  color: #26291e;
+  background: none;
+  max-width: 95px;
+  width: 65px;
+  padding-top: 7px;
+  font-size: 11px;
+}
+#page #header #top-banner-container #graphic-menu ul li a .circle {
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  background-color: #ffffff;
+  background-position: no-repeat;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: -7px;
+  font-size: 65px;
+}
+#page #header #top-banner-container #graphic-menu ul li a .circle:hover {
+  color: #a1a1a4;
+}
+#page #header #top-banner-container #graphic-menu ul li a .circle svg:hover {
+  fill: #a1a1a4;
+}
+#page #header #top-banner-container #graphic-menu ul li a.button.counter {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #DF0010;
+  padding: 0px 5px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 18px;
+  right: 5px;
+  bottom: 35px;
+}
+#page #header #top-banner-container #graphic-menu ul li a.button.counter.blue {
+  background: #0583e1;
+}
+#page #header #main-navigation-container {
+  width: 100%;
+  margin: 0 auto;
+  background: #282922;
+}
+#page #header #main-navigation-container #main-navigation {
+  height: 32px;
+}
+#page #header #main-navigation-container #main-navigation #librus-logo {
+  width: 215px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background: url('/assets/img/synergia/header/topLogo.png') no-repeat left top;
+}
+#page #header #main-navigation-container #main-navigation #main-menu {
+  height: 32px;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list {
+  background: none;
+  padding: 0;
+  height: 32px;
+  width: auto;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list li {
+  height: 32px;
+  margin: 0 0 0 8px;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list li a {
+  font-weight: normal;
+  font-size: 14px;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list li ul {
+  background: #282922;
+  -webkit-opacity: 0.875;
+  -moz-opacity: 0.875;
+  opacity: 0.875;
+  top: 31px;
+  border-top: none;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list li ul li {
+  margin: 0;
+  height: 25px;
+}
+#page #header #main-navigation-container #main-navigation #main-menu ul.main-menu-list li ul li:hover {
+  background: #323233;
+}
+#page #header #user-section {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  margin: 5px auto 0 auto;
+}
+#page #header.ebrmn-header-smaller #top-banner-container:after {
+  content: 'Biblioteka rozkładów materiału nauczania';
+  position: absolute;
+  color: #717171;
+  top: 50px;
+  font-size: 21px;
+  font-weight: bold;
+  right: 0px;
+}
+#page #header.ebrmn-header #top-banner-container:after {
+  content: 'Biblioteka rozkładów materiału nauczania';
+  position: absolute;
+  color: #717171;
+  top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  right: 0px;
+}
+#page .synergia-low {
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+#page .synergia-color {
+  color: #aa6289;
+  font-weight: bold;
+}
+#page #footer #variantName {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #313332;
+  font-size: 12px;
+}
+/************************** Ustawienia -> Aplikacje **************************/
+/* Header */
+#mobile_adds_header {
+  display: block;
+  float: left;
+  margin-top: 35px;
+}
+#mobile_adds_header img {
+  display: block;
+  float: left;
+  margin-right: 16px;
+}
+#mobile_adds_header span {
+  display: block;
+  float: left;
+  padding-top: 5px;
+}
+/* Adds list */
+#options_list {
+  display: block;
+  margin: 20px auto;
+  width: 650px;
+  padding: 0;
+  /* Buttons */
+}
+#options_list div {
+  float: none;
+  clear: both;
+}
+#options_list li {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  display: block;
+  width: 610px;
+}
+#options_list li:first-of-type {
+  margin-bottom: 50px;
+}
+#options_list li.option.green {
+  background-color: #a4c614;
+}
+#options_list li.option.violet {
+  background-color: #a05b8b;
+}
+#options_list li.option.grey {
+  background-color: #99b6ca;
+}
+#options_list li.option.darkred {
+  background-color: #b13d3d;
+}
+#options_list li.option > div {
+  width: 650px;
+  background-color: white;
+}
+#options_list li.option > div.cream {
+  background-color: #F5F5F8;
+}
+#options_list a {
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+}
+#options_list a:hover {
+  cursor: pointer;
+}
+#options_list a.green {
+  background-color: #a4c614;
+}
+#options_list a.violet {
+  background-color: #a05b8b;
+}
+#options_list a.grey {
+  background-color: #99b6ca;
+}
+#options_list a.darkred {
+  background-color: #b13d3d;
+}
+#mobile-banner {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+#mobile-banner .buttons_cell_3 {
+  width: 400px;
+}
+#mobile-banner .buttons_cell_2 {
+  width: 265px;
+}
+.pseudo_table {
+  display: table;
+}
+.pseudo_table .pseudo_row {
+  display: table-row;
+}
+.pseudo_table .pseudo_row .pseudo_cell {
+  display: table-cell;
+  float: none !important;
+  box-sizing: border-box;
+  padding: 3px 15px;
+  vertical-align: middle;
+  /* Text position */
+  /* Cell size */
+  /* Paddings */
+}
+.pseudo_table .pseudo_row .pseudo_cell.middle {
+  text-align: center;
+}
+.pseudo_table .pseudo_row .pseudo_cell.right {
+  text-align: right;
+}
+.pseudo_table .pseudo_row .pseudo_cell.left {
+  text-align: left;
+}
+.pseudo_table .pseudo_row .pseudo_cell.xxl-cell {
+  width: 80%;
+}
+.pseudo_table .pseudo_row .pseudo_cell.xl-cell {
+  width: 50%;
+}
+.pseudo_table .pseudo_row .pseudo_cell.small-cell {
+  width: 25%;
+}
+.pseudo_table .pseudo_row .pseudo_cell.cell40 {
+  width: 40%;
+}
+.pseudo_table .pseudo_row .pseudo_cell.no-space-right {
+  padding-right: 0;
+}
+.pseudo_table .pseudo_row .pseudo_cell.higher {
+  padding: 10px 15px;
+}
+.pseudo_table .pseudo_row .pseudo_cell .padding0 {
+  padding: 0;
+}
+.pseudo_table .pseudo_row .pseudo_cell .padding-left-5 {
+  padding-left: 5px;
+}
+/* Font size */
+.font24 {
+  font-size: 24px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font14 {
+  font-size: 14px;
+}
+.font12 {
+  font-size: 12px;
+}
+.font10 {
+  font-size: 10px;
+}
+/* Font's transform */
+.uppercase {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}

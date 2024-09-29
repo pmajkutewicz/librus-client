@@ -1,0 +1,7 @@
+#body {
+    width: 100%;
+    min-width: 1000px;
+}
+#page.no-head #body {
+    min-width: 100%;
+}

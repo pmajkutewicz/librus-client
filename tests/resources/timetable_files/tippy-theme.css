@@ -1,0 +1,23 @@
+.tippy-box[data-theme~='librus-error'] {
+    background-color: #faa;
+}
+
+.tippy-box[data-theme~='librus-error'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: #faa;
+}
+
+.tippy-box[data-theme~='librus-error'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: #faa;
+}
+
+.tippy-box[data-theme~='librus-error'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #faa;
+}
+
+.tippy-box[data-theme~='librus-error'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #faa;
+}
+
+*[data-tippy-root] {
+    z-index: 1000000!important;
+}

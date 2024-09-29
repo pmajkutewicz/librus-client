@@ -1,0 +1,100 @@
+.ui-dialog-custom
+{
+    border: 1px #e4e6e8 solid;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.ui-dialog-custom .ui-dialog-title
+{
+    width: 235px;
+    margin: 0 auto;
+    height: 24px;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-weight: normal;
+    float: none;
+}
+
+.ui-dialog-custom .ui-dialog-titlebar
+{
+    padding: 0;
+}
+
+.ui-dialog-custom .ui-dialog-buttonpane
+{
+    border-top-width: 0;
+}
+
+.ui-dialog-custom .ui-dialog-titlebar-close
+{
+    width: 14px;
+    height: 14px;
+}
+
+.ui-dialog-custom .ui-dialog-titlebar-close .ui-icon
+{
+    width: 14px;
+    height: 14px;
+}
+
+.ui-dialog-custom .ui-dialog-titlebar .ui-state-hover
+{
+    background: none;
+    border: none;
+    color: #222;
+    padding: 1px;
+}
+
+.ui-dialog-information .ui-dialog-title
+{
+    background: url("/images/newLayout/messages/warningTitleInformation.png") no-repeat;
+}
+
+.ui-dialog-information .ui-dialog-titlebar-close .ui-icon
+{
+    background: url("/images/newLayout/messages/warningCloseInformation.png") no-repeat;
+}
+
+.ui-dialog-synergia .ui-dialog-title
+{
+    background: url("/images/newLayout/messages/warningTitleSynergia.png") no-repeat;
+}
+
+.ui-dialog-synergia .ui-dialog-titlebar-close .ui-icon
+{
+    background: url("/images/newLayout/messages/warningCloseSynergia.png") no-repeat;
+}
+
+.ui-dialog-error .ui-dialog-title
+{
+    background: url("/images/newLayout/messages/warningTitleError.png") no-repeat;
+}
+
+.ui-dialog-error .ui-dialog-titlebar-close .ui-icon
+{
+    background: url("/images/newLayout/messages/warningCloseError.png") no-repeat;
+}
+
+.ui-dialog-warning .ui-dialog-title
+{
+    background: url("/images/newLayout/messages/warningTitleWarning.png") no-repeat;
+}
+
+.ui-dialog-warning .ui-dialog-titlebar-close .ui-icon
+{
+    background: url("/images/newLayout/messages/warningCloseWarning.png") no-repeat;
+}
+
+.ui-dialog-question .ui-dialog-title
+{
+    background: url("/images/newLayout/messages/warningTitleQuestion.png") no-repeat;
+}
+
+.ui-dialog-question .ui-dialog-titlebar-close .ui-icon
+{
+    background: url("/images/newLayout/messages/warningCloseQuestion.png") no-repeat;
+}

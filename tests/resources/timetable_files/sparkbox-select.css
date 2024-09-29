@@ -1,0 +1,11 @@
+.checkbox, .radio {
+	width: 19px;
+	height: 25px;
+	padding: 0;
+    margin: 0 5px;
+	background: url("/images/newLayout/forms/checkbox.png") no-repeat;
+    display: block;
+}
+.radio {
+	background: url("/images/newLayout/forms/radio.png") no-repeat;
+}

@@ -1,0 +1,230 @@
+@page {
+    size: auto;
+    margin: 10mm 5mm;
+}
+
+body {
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: none;
+}
+#footer {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+table.decorated.filters {
+    display: none;
+}
+table.decorated.form {
+    display: none;
+}
+
+table.decorated.form.printable {
+    display: table;
+}
+
+h1 {
+    font-size: 14pt;
+}
+h2 {
+    font-size: 12pt;
+}
+h3 {
+    font-size: 11pt;
+}
+h4 {
+    font-size: 10pt;
+}
+input {
+    display: none !important;
+}
+select {
+    display: none;
+}
+textarea {
+    display: none;
+}
+span.fold {
+    display: none;
+}
+
+.screen-only {
+    display: none;
+}
+table.decorated {
+    border-collapse: collapse;
+    margin: 10pt 0;
+}
+table td, table td {
+    vertical-align: top;
+}
+table.decorated td, table.decorated th {
+    border: 1pt solid;
+    vertical-align: middle;
+}
+table.decorated td, table.decorated th {
+    text-align: left;
+    padding: 2pt 3pt;
+}
+table.decorated td.left, table.decorated th.left {
+    text-align: left;
+}
+table.decorated td.right, table.decorated th.right {
+    text-align: right;
+}
+table.decorated thead td, table.decorated thead th {
+    text-align: center;
+}
+table.decorated tfoot td, table.decorated tfoot th {
+    text-align: center;
+}
+table.decorated table {
+    border-collapse: collapse;
+}
+table.decorated thead, table.decorated tfoot, table.decorated th {
+    font-weight: bold;
+}
+table.decorated a {
+    text-decoration: none;
+}
+
+div.pagination ul {
+    display: none;
+}
+
+.legend {
+    font-size: 7pt;
+    width: 100%;
+    margin: 10pt 0 20pt 0;
+    padding: 0;
+    text-align: left;
+}
+.legend h3 {
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.legend ul {
+    list-style: none;
+    margin: 10pt 0 0 0pt;
+    padding: 0;
+}
+.legend ul li {
+    list-style: none;
+    margin: 0 40pt 10pt 0;
+    padding: 0;
+}
+.legend ul li span {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 12pt;
+    height: 12pt;
+    background-color: #FFFFFF;
+}
+.legend ul li span.red {
+    background-color: #f92900;
+}
+.legend ul li span.green {
+    background-color: #a4c801;
+}
+.legend ul li span.blue {
+    background-color: #008df9;
+}
+.legend ul li span.orange {
+    background-color: #f98d00;
+}
+.legend ul li span.yellow {
+    background-color: #f9f900;
+}
+.legend ul li p {
+    float: left;
+    margin: 0 0 0 10pt;
+    padding: 0;
+    line-height: 12pt;
+}
+
+#interfejs-lekcyjny {
+    display: none;
+}
+
+div.chart {
+    page-break-inside: avoid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.decorated a {
+    color: #000000;
+}
+
+#tabela-artykulu-box-artykulu {
+    width: 100%;
+}
+#tabela-artykulu-box-twitter {
+    width: 0%;
+}
+
+table.class-register-view td {
+   height: 24pt;
+   width: 14pt;
+   min-width: 14pt;
+   padding:0pt; 
+   font-size:8pt;
+   text-align:center;
+   border-color:#aaaaaa;
+}
+
+span.nowrap {
+    white-space: nowrap;
+}
+
+.bigGradesTable tr td{
+    padding-top: 0pt;
+    padding-bottom: 0pt; 
+}
+
+span.grade-box {
+    margin-right: 6pt;
+}
+
+.ui-tooltip-content {
+    display: none;
+}
+
+.helper-icon{
+    display: none;
+}
+
+p.box{
+  display: block;
+  width: 20pt;
+  border-color: #bbb;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  margin: 2pt 0pt 2pt 0pt;
+}
+
+#navigator-panel {
+    display: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+#absenceGraph{
+    display: none;
+}

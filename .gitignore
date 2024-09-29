@@ -1,0 +1,13 @@
+#idea files
+.idea
+*.iml
+
+.build
+.coverage
+venv
+*.env
+__pycache__
+dist
+.pypirc
+*.egg-info
+.pypirc
