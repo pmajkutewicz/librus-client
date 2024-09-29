@@ -1,0 +1,7 @@
+[html]
+directory = .build/htmlcov
+
+;[run]
+;branch = True
+;omit = */__init__.py
+;source = src/main/python

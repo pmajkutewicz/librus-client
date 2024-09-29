@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "librus_client"
+version = "0.0.0.12"
+authors = [
+    {name = "Paweł Majkutewicz", email = "pmajkutewicz@gmail.com"},
+]
+description = "Library to fetch and parse librus pages - cause they don't want to share their API."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["librus", "synergia", "api"]
+license = {text = "MIT License"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+    "beautifulsoup4==4.12.3",
+    "requests==2.32.3",
+    "python-dateutil==2.9.0.post0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+exclude = []

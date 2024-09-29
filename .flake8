@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 180
+max-complexity = 10
+select = F,E,W,I001,I002,I003,I004,I005
