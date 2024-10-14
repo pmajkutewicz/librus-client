@@ -5,8 +5,10 @@ from typing import List
 
 import requests
 from dateutil.relativedelta import relativedelta
-from librus_client.model.timetable import Timetable
 
+from librus_client.model.notices import Notice
+from librus_client.model.timetable import Timetable
+from librus_client.parsers.notices import NoticeParser
 from librus_client.parsers.timetable import TimetableParser
 
 
@@ -18,6 +20,7 @@ class Client:
     __url_login2 = 'https://api.librus.pl/OAuth/Authorization?client_id=46'
     __url_login3 = 'https://api.librus.pl/OAuth/Authorization/2FA?client_id=46'
     __url_timetable = 'https://synergia.librus.pl/terminarz'
+    __url_notices = 'https://synergia.librus.pl/uwagi'
 
     __login_payload = {
         'action': 'login',
@@ -41,6 +44,12 @@ class Client:
         for next_month in next_months:
             data = self.__session.post(self.__url_timetable, data={'rok': next_month[0], 'miesiac': next_month[1], 'requestkey': key})
             result.extend(TimetableParser(data.text).extract_timetable())
+        return result
+
+    def notices(self) -> List[Notice]:
+        notices = self.__session.get(self.__url_notices)
+        parser: NoticeParser = NoticeParser(notices.text)
+        result: List[Notice] = parser.extract_notices()
         return result
 
     @staticmethod

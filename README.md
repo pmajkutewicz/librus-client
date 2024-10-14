@@ -33,6 +33,21 @@ a = client.terminarz()
 print(a)
 ```
 
+### Notices
+
+Example code for fetching student notices.
+You have to pass 2 envs:
+- LIBRUS_LOGIN (login do librusa)
+- LIBRUS_PASS (hasło)
+
+```python
+from client import Client
+
+client: Client = Client()
+a = client.notices()
+print(a)
+```
+
 ## Credentials
 
 - Big thanks to https://github.com/Mati365/librus-api - I've used checked his log in solution.
@@ -68,7 +83,21 @@ req_log.setLevel(logging.DEBUG)
 req_log.propagate = True
 
 client: Client = Client()
-a = client.terminarz()
+a = client.timetable()
+print(a)
+```
+
+### Uwagi
+
+Przykładowy kod pobierający uwagi ucznia.
+Wymaga podania 2 zmiennych środowiskowych:
+- LIBRUS_LOGIN (login do librusa)
+- LIBRUS_PASS (hasło)
+
+```python
+from client import Client
+client: Client = Client()
+a = client.notices()
 print(a)
 ```
 
