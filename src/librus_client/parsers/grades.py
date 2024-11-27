@@ -37,7 +37,7 @@ class GradeParser:
         columns = row.find_all('td')
         subject_name = columns[self.__TD_IDX_SUBJECT_NAME].string
         results: Dict[Type, List[Grade]] = {}
-        for grade_type in list(Type):
+        for grade_type in Type:
             results[grade_type] = self.__parse_grades(columns[grade_type.value + 1])
 
         return SubjectGrades(subject_name, results)
