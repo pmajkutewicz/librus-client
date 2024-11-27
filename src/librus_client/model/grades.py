@@ -4,15 +4,15 @@ from enum import Enum
 from typing import List, Dict
 
 
-class Type(Enum):
-    SEMESTER_1_GRADE = 1
-    SEMESTER_1_AVG = 2
-    SEMESTER_1_FINAL = 3
-    SEMESTER_2_GRADE = 4
-    SEMESTER_2_AVG = 5
-    SEMESTER_2_FINAL = 6
-    YEAR_AVG = 7
-    YEAR_FINAL = 8
+class Type(str, Enum):
+    SEMESTER_1_GRADE = 'sem. 1'
+    SEMESTER_1_AVG = 'sem. 1 śr.'
+    SEMESTER_1_FINAL = 'sem. 1 końcowa'
+    SEMESTER_2_GRADE = 'sem. 2'
+    SEMESTER_2_AVG = 'sem. 2 śr.'
+    SEMESTER_2_FINAL = 'sem. 2 końcowa'
+    YEAR_AVG = 'roczna śr.'
+    YEAR_FINAL = 'roczna śr.'
 
 
 @dataclass

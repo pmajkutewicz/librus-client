@@ -24,9 +24,9 @@ class GradeParser:
     def __init__(self, response: str):
         self.__soup = BeautifulSoup(response, 'html.parser')
 
-    def extract_grades(self):
+    def extract_grades(self) -> List[SubjectGrades]:
         all_tables: ResultSet = self.__soup.find('form').find_all('table', {'class': 'decorated stretch'})
-        current_grades: List[Grade] = self.__parse_all_grades(all_tables[0].find('tbody'))
+        current_grades: List[SubjectGrades] = self.__parse_all_grades(all_tables[0])
         return current_grades
 
     def __parse_all_grades(self, table: Tag) -> List[SubjectGrades]:

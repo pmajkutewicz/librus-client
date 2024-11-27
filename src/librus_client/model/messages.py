@@ -6,7 +6,7 @@ from typing import List
 @dataclass
 class Receiver:
     first_name: str
-    lastname_name: str
+    last_name: str
     group: str
     active: int
     pupil_first_name: str
