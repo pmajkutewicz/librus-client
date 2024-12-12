@@ -1,4 +1,5 @@
 import datetime
+import hashlib
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Dict
@@ -25,6 +26,13 @@ class Grade:
     grade: str
     details: str
     comment: str
+
+    def __hash__(self) -> str:
+        a_date = '' if self.date is None else str(self.date)
+        a_teacher = '' if self.teacher is None else self.teacher
+        a_category = '' if self.category is None else self.category
+        a_grade = '' if self.grade is None else self.grade
+        return hashlib.md5(f'{a_date}-{a_teacher}-{a_category}-{a_grade}'.encode('utf-8')).hexdigest()
 
 
 @dataclass
