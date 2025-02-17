@@ -8,12 +8,14 @@ from typing import List, Dict
 class Type(Enum):
     SEMESTER_1_GRADE = 1
     SEMESTER_1_AVG = 2
-    SEMESTER_1_FINAL = 3
-    SEMESTER_2_GRADE = 4
-    SEMESTER_2_AVG = 5
-    SEMESTER_2_FINAL = 6
-    YEAR_AVG = 7
-    YEAR_FINAL = 8
+    SEMESTER_1_EXPECTED_FINAL = 3
+    SEMESTER_1_FINAL = 4
+    SEMESTER_2_GRADE = 5
+    SEMESTER_2_AVG = 6
+    SEMESTER_2_EXPECTED_FINAL = 7
+    SEMESTER_2_FINAL = 8
+    YEAR_AVG = 9
+    YEAR_FINAL = 10
 
 
 @dataclass
