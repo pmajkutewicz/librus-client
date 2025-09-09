@@ -14,8 +14,11 @@ class NoticeParser:
         self.__soup = BeautifulSoup(response, 'html.parser')
 
     def extract_notices(self) -> List[Notice]:
-        notices: ResultSet = self.__soup.find('table', {'class': 'decorated big center'}).find('tbody').find_all('tr')
-        return [self.__parse_notice(n) for n in notices]
+        notices: Tag = self.__soup.find('table', {'class': 'decorated big center'})
+        if notices is not None:
+            return [self.__parse_notice(n) for n in notices.find('tbody').find_all('tr')]
+        else:
+            return []
 
     @staticmethod
     def __parse_notice(notice: Tag) -> Notice:
