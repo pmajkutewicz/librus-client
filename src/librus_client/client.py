@@ -32,14 +32,12 @@ class Client:
     __url_messages_content = 'https://wiadomosci.librus.pl/api/inbox/messages/{}'
     __url_grades = 'https://synergia.librus.pl/przegladaj_oceny/uczen'
 
-    __login_payload = {
-        'action': 'login',
-        'login': os.environ['LIBRUS_LOGIN'],
-        'pass': os.environ['LIBRUS_PASS']
-    }
+    __login_payload = None
 
-    def __init__(self):
-        self.session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'})
+    def __init__(self, login: str, password: str):
+        self.__login_payload = {'action': 'login', 'login': login, 'pass': password}        
+        self.session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'})        
+        
         a = self.session.get(self.__url_login)
         b = self.session.post(self.__url_login2, data=self.__login_payload)
         c = self.session.get(self.__url_login3)
